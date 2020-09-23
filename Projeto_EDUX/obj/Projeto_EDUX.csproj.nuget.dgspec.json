@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vinicius\\source\\repos\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {}
+    "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vinicius\\source\\repos\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {
+    "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vinicius\\source\\repos\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+        "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
         "projectName": "Projeto_EDUX",
-        "projectPath": "C:\\Users\\Vinicius\\source\\repos\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+        "projectPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
         "packagesPath": "C:\\Users\\Vinicius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vinicius\\source\\repos\\Projeto_EDUX\\Projeto_EDUX\\obj\\",
+        "outputPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,36 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
