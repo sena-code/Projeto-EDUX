@@ -21,7 +21,7 @@ namespace Projeto_EDUX.Interfaces
         void Cadastrar(Instituicao instituicao);
 
         //Metodo para excluir uma instituicao do sistema
-        void Exluir(Guid id);
+        void Remover(Guid id);
 
     }
 }

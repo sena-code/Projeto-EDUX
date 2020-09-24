@@ -56,7 +56,7 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
-        public void Exluir(Guid id)
+        public void Remover(Guid id)
         {
             try
             {
