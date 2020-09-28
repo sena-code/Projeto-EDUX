@@ -44,7 +44,7 @@ namespace Projeto_EDUX
                 {
                     Version = "v1",
                     Title = "Edux API",
-                    Description = "Uma loja simples para aprendizado em ASP.NET Core Web API",
+                    Description = "Projeto em ASP.NET Core Web API",
                     TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
