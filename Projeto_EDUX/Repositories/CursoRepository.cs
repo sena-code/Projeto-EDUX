@@ -18,11 +18,16 @@ namespace Projeto_EDUX.Repositories
             _ctx = new EduxContext();
         }
 
+        /// <summary>
+        /// Adiciona um curso
+        /// </summary>
+        /// <param name="curso">Nome do curso</param>
+
         public void Adicionar(Curso curso)
         {
             try
             {
-                _ctx.Curso.Add(curso);
+                _ctx.Cursos.Add(curso);
                 _ctx.SaveChanges();
             }
             catch (Exception ex)
@@ -31,11 +36,16 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+        /// <summary>
+        /// Procura um curso pelo seu id
+        /// </summary>
+        /// <param name="id">Id do curso</param>
+        /// <returns>Curso procurado</returns>
         public Curso BuscarPorId(Guid id)
         {
             try
             {
-                return _ctx.Curso.Find(id);
+                return _ctx.Cursos.Find(id);
             }
             catch (Exception ex)
             {
@@ -43,11 +53,15 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+        /// <summary>
+        /// Listar todos os cursos do sistema
+        /// </summary>
+        /// <returns>Lista de cursos</returns>
         public List<Curso> Listar()
         {
             try
             {
-                return _ctx.Curso.ToList();
+                return _ctx.Cursos.ToList();
             }
             catch (Exception ex)
             {
@@ -55,6 +69,11 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+
+        /// <summary>
+        /// Remove um curso
+        /// </summary>
+        /// <param name="id">Id do curso</param>
         public void Remover(Guid id)
         {
             try
@@ -64,7 +83,7 @@ namespace Projeto_EDUX.Repositories
                 if (curso == null)
                     throw new Exception("Curso não encontrado");
 
-                _ctx.Curso.Remove(curso);
+                _ctx.Cursos.Remove(curso);
                 _ctx.SaveChanges();
 
             }
