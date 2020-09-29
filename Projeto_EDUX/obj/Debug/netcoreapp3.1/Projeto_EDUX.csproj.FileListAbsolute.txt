@@ -119,8 +119,6 @@ C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.csprojAssemblyReference.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.AssemblyInfoInputs.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.AssemblyInfo.cs
-C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.csproj.CoreCompileInputs.cache
-C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.RazorTargetAssemblyInfo.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.csproj.CopyComplete
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\staticwebassets\Projeto_EDUX.StaticWebAssets.Manifest.cache
@@ -128,3 +126,12 @@ C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.dll
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.pdb
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.genruntimeconfig.cache
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.csproj.CoreCompileInputs.cache
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml

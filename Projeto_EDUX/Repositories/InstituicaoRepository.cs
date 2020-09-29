@@ -18,6 +18,12 @@ namespace Projeto_EDUX.Repositories
             _ctx = new EduxContext();
         }
 
+
+        /// <summary>
+        /// Busca uma isntituicao pelo seu nome
+        /// </summary>
+        /// <param name="id">Id da instituicao</param>
+        /// <returns>Instituicao procurada</returns>
         public Instituicao BuscarPorId(Guid id)
         {
             try
@@ -30,6 +36,11 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca uma instituicao pelo seu nome
+        /// </summary>
+        /// <param name="nome">Nome da instituicao</param>
+        /// <returns>Instituicao procurada</returns>
         public List<Instituicao> BuscarPorNome(string nome)
         {
             try
@@ -43,6 +54,11 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+
+        /// <summary>
+        /// Cadastra uma instituicao
+        /// </summary>
+        /// <param name="instituicao">Instuicao cadastrada</param>
         public void Cadastrar(Instituicao instituicao)
         {
             try
@@ -56,6 +72,10 @@ namespace Projeto_EDUX.Repositories
             }
         }
 
+        /// <summary>
+        /// Remove uma instituicao
+        /// </summary>
+        /// <param name="id">Id da instituicao</param>
         public void Remover(Guid id)
         {
             try

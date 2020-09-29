@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EDUX.Domains;
@@ -10,6 +11,7 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class CursoController : ControllerBase
@@ -21,6 +23,7 @@ namespace Projeto_EDUX.Controllers
             _crusoRepository = new CursoRepository();
         }
 
+        // GET api/<CursoController>
         /// <summary>
         /// Ler todos os cursos cadastrados
         /// </summary>
@@ -52,8 +55,9 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        // GET api/<CursoController>/5
         /// <summary>
-        /// Busca um unico curso no sistema
+        /// Busca um unico curso no sistema pelo seu ID
         /// </summary>
         /// <param name="id">ID do curso</param>
         /// <returns>Curso procurado</returns>
@@ -76,7 +80,7 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
-
+        // POST api/<CursoController>
         /// <summary>
         /// Cadastra um curso no sistema
         /// </summary>
@@ -97,6 +101,7 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        // DELETE api/<CursoController>/5
         /// <summary>
         /// Exclui um curso do sistema
         /// </summary>
