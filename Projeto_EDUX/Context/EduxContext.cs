@@ -12,11 +12,13 @@ namespace Projeto_EDUX.Context
         public DbSet<Dica> Dicas { get; set; }
         public DbSet<Perfil> Perfils { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Objetivo> Objetivo { get; set; }
+        public DbSet<Categoria> Categoria { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Data Source = VINICIUS\SQLEXPRESS; Initial Catalog = edux; User ID = sa; Password = sa132");
+                optionsBuilder.UseSqlServer(@"Data Source = .\SQLEXPRESS; Initial Catalog = edux; User ID = sa; Password = sa132");
         }
 
 
