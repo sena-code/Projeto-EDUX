@@ -133,3 +133,5 @@ C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.csproj.CoreCompileInputs.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
+C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml

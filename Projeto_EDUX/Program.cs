@@ -9,9 +9,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Projeto_EDUX
 {
+#pragma warning disable CS1591
     public class Program
     {
-#pragma warning disable CS1591
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();

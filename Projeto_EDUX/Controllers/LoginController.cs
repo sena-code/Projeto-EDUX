@@ -69,6 +69,11 @@ namespace Projeto_EDUX.Controllers
 
         // Usamos a anotação "AllowAnonymous" para 
         // ignorar a autenticação neste método, já que é ele quem fará isso
+       /// <summary>
+       /// Dados para logar um usuario
+       /// </summary>
+       /// <param name="login">Login do usuario</param>
+       /// <returns>Usuario logado</returns>
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Login([FromBody] Usuario login)

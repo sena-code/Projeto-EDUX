@@ -11,7 +11,7 @@ namespace Projeto_EDUX.Interfaces
 
         //Metodo que lista todos os curso que foram adicionados no sistema
         List<Curso> Listar();
-
+        //Metodo para buscar um curso pelo id
         Curso BuscarPorId(Guid id);
 
         //Metodo que adiciona um curso no sistema, com os seus respectivos dados

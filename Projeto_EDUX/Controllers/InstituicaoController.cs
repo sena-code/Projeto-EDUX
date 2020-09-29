@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto_EDUX.Domains;
@@ -10,6 +11,7 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class InstituicaoController : ControllerBase
@@ -21,6 +23,7 @@ namespace Projeto_EDUX.Controllers
             _instituicaoRepository = new InstituicaoRepository();
         }
 
+        // GET api/<InstituicaoController>
         /// <summary>
         /// Ler todos as instituicoes cadastradas
         /// </summary>
@@ -52,8 +55,9 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        // GET api/<InstituicaoController>/5
         /// <summary>
-        /// Busca uma unica instituicao
+        /// Busca uma unica instituicao pelo seu ID
         /// </summary>
         /// <param name="id">ID da instituicao</param>
         /// <returns>Instituicao procurada</returns>
@@ -76,7 +80,31 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        // GET api/<InstituicaoController>/5
+        /// <summary>
+        /// Busca uma instituicao pelo seu nome
+        /// </summary>
+        /// <param name="nome">Nome da instituicao</param>
+        /// <returns>Instituicao procurada</returns>
+        [HttpGet("{nome}")]
+        public IActionResult Get(string nome)
+        {
+            try
+            {
+                List<Instituicao> instituicao = _instituicaoRepository.BuscarPorNome(nome);
 
+                if (instituicao == null)
+                    return NotFound();
+
+                return Ok(instituicao);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        // POST api/<InstituicaoController>
         /// <summary>
         /// Cadastra uma instituicao no sistema
         /// </summary>
@@ -97,6 +125,7 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        // DELETE api/<InstituicaoController>/5
         /// <summary>
         /// Exclui uma instituicao do sistema
         /// </summary>
