@@ -1,4 +1,4 @@
-﻿<h1>PROJETO EDUX: Code firt</h1>
+﻿<h1>PROJETO EDUX: Code first</h1>
 <h3>Sprint2: Desenvolvido por: Equipe 4</h3>
 
 <h3>1 – Mundo Comum</h3>
