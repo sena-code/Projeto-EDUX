@@ -1,4 +1,4 @@
-<h1>PROJETO EDUX: Code firt</h1>
+﻿<h1>PROJETO EDUX: Code firt</h1>
 <h3>Sprint2: Desenvolvido por: Equipe 4</h3>
 
 <h3>1 – Mundo Comum</h3>
@@ -58,3 +58,5 @@
 </ol>
 
 <p>Obs.: sistema mobile será desenvolvido na sprint4</p>
+
+<img src="https://github.com/LaisMaas/Projeto-EDUX/blob/master/img/DiagramaProjetoEdux.PNG" alt="Modelagem lógica">

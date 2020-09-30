@@ -5638,19 +5638,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FamilySilvaFelix\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FamilySilvaFelix\\Documents\\ESTUDOS\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
       "projectName": "Projeto_EDUX",
-      "projectPath": "C:\\Users\\FamilySilvaFelix\\Documents\\ESTUDOS\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
-      "packagesPath": "C:\\Users\\FamilySilvaFelix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FamilySilvaFelix\\Documents\\ESTUDOS\\Projeto-EDUX\\Projeto_EDUX\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\FamilySilvaFelix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
