@@ -1,7 +1,24 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {}
+=======
+<<<<<<< HEAD
+    "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj": {}
+  },
+  "projects": {
+    "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj",
+        "projectName": "Projeto_EDUX",
+        "projectPath": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj",
+        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
+        "outputPath": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\obj\\",
+=======
+    "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {}
+>>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
   },
   "projects": {
     "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj": {
@@ -9,12 +26,27 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
         "projectName": "Projeto_EDUX",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
         "packagesPath": "C:\\Users\\Vinicius\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\obj\\",
+=======
+        "projectPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\obj\\",
+>>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
+>>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
+>>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +121,15 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+>>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
+>>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
         }
       }
     }
