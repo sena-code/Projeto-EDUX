@@ -48,13 +48,20 @@ namespace Projeto_EDUX.Controllers
         }
 
         // GET api/<CurtidaController>/5
+<<<<<<< HEAD
         /// <summary>
+=======
+         /// <summary>
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         ///  Buscar curtida através do id
         /// </summary>
         /// <param name="id">id da curtida</param>
         /// <returns>Curtida correspondente ao id</returns>
         [HttpGet("{id}")]
+<<<<<<< HEAD
       
+=======
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         public IActionResult Get(Guid id)
         {
             try
@@ -90,7 +97,11 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+<<<<<<< HEAD
         // PUT api/<CurtidaController>/5
+=======
+        // PUT api/<CurtidaController>/
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         /// <summary>
         /// Editar a curtida
         /// </summary>
@@ -98,7 +109,10 @@ namespace Projeto_EDUX.Controllers
         /// <param name="curtida">vizualizações da curtida </param>
         /// <returns>Curtida alterada</returns>
         [HttpPut("{id}")]
+<<<<<<< HEAD
        
+=======
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         public IActionResult Put(Guid id, Curtida curtida)
         {
             try
@@ -117,10 +131,15 @@ namespace Projeto_EDUX.Controllers
         /// <summary>
         /// Excluir curtida
         /// </summary>
+<<<<<<< HEAD
         /// <param name="id">id da curtida</param>
         /// <returns>exclui a curtida</returns>
         [HttpDelete("{id}")]
         
+=======
+        /// <param name="id">id da curtidade a ser excluída</param>
+        [HttpDelete("{id}")]
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         public IActionResult Delete(Guid id)
         {
             try

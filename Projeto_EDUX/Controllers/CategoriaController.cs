@@ -131,4 +131,9 @@ namespace Projeto_EDUX.Controllers
 
 }
 
+<<<<<<< HEAD
  
+=======
+
+
+>>>>>>> c4a095c887177572a87488693034a84a1215717f

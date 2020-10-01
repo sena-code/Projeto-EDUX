@@ -104,10 +104,16 @@
         </member>
         <member name="M:Projeto_EDUX.Controllers.CurtidaController.Delete(System.Guid)">
             <summary>
+<<<<<<< HEAD
             Excluir curtida
             </summary>
             <param name="id">id da curtida</param>
             <returns>exclui a curtida</returns>
+=======
+            Excluir a curtida
+            </summary>
+            <param name="id">id da curtidade a ser excluída</param>
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         </member>
         <member name="M:Projeto_EDUX.Controllers.DicaController.Get">
             <summary>
@@ -307,7 +313,11 @@
             Editar um Usuário
             </summary>
             <param name="id">id do usuário que deseja editar</param>
+<<<<<<< HEAD
             <param name="usuario">usuário que deseja editar</param>
+=======
+            /// <param name="usuario">Usuário que deseja editar</param>
+>>>>>>> c4a095c887177572a87488693034a84a1215717f
         </member>
         <member name="M:Projeto_EDUX.Controllers.UsuarioController.Delete(System.Guid)">
             <summary>
