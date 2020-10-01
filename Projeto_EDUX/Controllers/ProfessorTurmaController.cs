@@ -44,12 +44,13 @@ namespace Projeto_EDUX.Controllers
         }
 
         // GET api/<ProfessorTurmaController>/5
-        [HttpGet("{id}")]
         /// <summary>
         ///  Buscar professor pelo id
         /// </summary>
         /// <param name="id">id do professor</param>
         /// <returns>dados do professsor através do id</returns>
+        [HttpGet("{id}")]
+      
         public IActionResult Get(Guid id)
         {
             try
@@ -109,13 +110,14 @@ namespace Projeto_EDUX.Controllers
         }
 
         // PUT api/<ProfessorTurmaController>/5
-        [HttpPut("{id}")]
         /// <summary>
         /// Editar dados do professor
         /// </summary>
         /// <param name="id">id do professor</param>
-        /// <param name="dica">dados do professor</param>
+        /// <param name="professorTurma">dados do professor</param>
         /// <returns>dados do professor adicionado ok</returns>
+        [HttpPut("{id}")]
+        
         public IActionResult Put(Guid id, [FromBody] ProfessorTurma professorTurma)
         {
             try
@@ -131,11 +133,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // DELETE api/<ProfessorTurmaController>/5
-        [HttpDelete("{id}")]
         /// <summary>
         /// Excluir um cadastro de professor
         /// </summary>
         /// <param name="id">id do cadastro correspondente ao professor a ser excluida</param>
+        [HttpDelete("{id}")]
+        
         public IActionResult Delete(Guid id)
         {
             try

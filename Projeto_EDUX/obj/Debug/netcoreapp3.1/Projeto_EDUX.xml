@@ -19,6 +19,33 @@
             <returns>adiciona aluno</returns>
             
         </member>
+        <member name="M:Projeto_EDUX.Controllers.CategoriaController.Get">
+            <summary>
+            Ler todos as categorias cadastrados
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CategoriaController.Get(System.Guid)">
+            <summary>
+            Busca um unica categoria  no sistema pelo seu ID
+            </summary>
+            <param name="id">ID do categoria</param>
+            <returns>Categoria procurado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CategoriaController.Post(Projeto_EDUX.Domains.Categoria)">
+            <summary>
+            Cadastra uma categoria no sistema
+            </summary>
+            <param name="categoria">categoria</param>
+            <returns>Curso cadastrado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CategoriaController.Delete(System.Guid)">
+            <summary>
+            Exclui um curso do sistema
+            </summary>
+            <param name="id">ID do curso a ser excluida</param>
+            <returns>ID do curso excluido</returns>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.CursoController.Get">
             <summary>
             Ler todos os cursos cadastrados
@@ -53,12 +80,34 @@
             <returns>OK ou BadRequest em caso de exceção</returns>
             
         </member>
+        <member name="M:Projeto_EDUX.Controllers.CurtidaController.Get(System.Guid)">
+            <summary>
+             Buscar curtida através do id
+            </summary>
+            <param name="id">id da curtida</param>
+            <returns>Curtida correspondente ao id</returns>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.CurtidaController.Post(Projeto_EDUX.Domains.Curtida)">
             <summary>
             Adicionar curtidas
             </summary>
             <param name="curtida">Vixualização das curtidas</param>
             <returns>adiciona curtidas</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CurtidaController.Put(System.Guid,Projeto_EDUX.Domains.Curtida)">
+            <summary>
+            Editar a curtida
+            </summary>
+            <param name="id">id da curtida </param>
+            <param name="curtida">vizualizações da curtida </param>
+            <returns>Curtida alterada</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CurtidaController.Delete(System.Guid)">
+            <summary>
+            Excluir curtida
+            </summary>
+            <param name="id">id da curtida</param>
+            <returns>exclui a curtida</returns>
         </member>
         <member name="M:Projeto_EDUX.Controllers.DicaController.Get">
             <summary>
@@ -135,6 +184,33 @@
             <param name="login">Login do usuario</param>
             <returns>Usuario logado</returns>
         </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoController.Get">
+            <summary>
+            Ler todos os Objetivos cadastrados
+            </summary>
+            <returns>Lista de objetivos</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoController.Get(System.Guid)">
+            <summary>
+            Busca um unico objetivo no sistema pelo seu ID
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <returns>Categoria procurado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoController.Post(Projeto_EDUX.Domains.Objetivo)">
+            <summary>
+            Cadastra um Objetivo no sistema
+            </summary>
+            <param name="objetivo">objetivo</param>
+            <returns>objetivo cadastrado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoController.Delete(System.Guid)">
+            <summary>
+            Exclui um objetivodo sistema
+            </summary>
+            <param name="id">ID do objetivo a ser excluida</param>
+            <returns>ID do objetivo excluido</returns>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.PerfilController.Get">
             <summary>
             Listar as Permições
@@ -177,6 +253,13 @@
              <returns>Ok ou badRequest em caso de exceção</returns>
             
         </member>
+        <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Get(System.Guid)">
+            <summary>
+             Buscar professor pelo id
+            </summary>
+            <param name="id">id do professor</param>
+            <returns>dados do professsor através do id</returns>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Post(Projeto_EDUX.Domains.ProfessorTurma)">
             <summary>
             Adicionar professor
@@ -184,6 +267,20 @@
             <param name="professor">dados do professor</param>
             <returns>professor adicionado</returns>
             
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Put(System.Guid,Projeto_EDUX.Domains.ProfessorTurma)">
+            <summary>
+            Editar dados do professor
+            </summary>
+            <param name="id">id do professor</param>
+            <param name="professorTurma">dados do professor</param>
+            <returns>dados do professor adicionado ok</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Delete(System.Guid)">
+            <summary>
+            Excluir um cadastro de professor
+            </summary>
+            <param name="id">id do cadastro correspondente ao professor a ser excluida</param>
         </member>
         <member name="M:Projeto_EDUX.Controllers.UsuarioController.Get">
             <summary>
@@ -210,6 +307,7 @@
             Editar um Usuário
             </summary>
             <param name="id">id do usuário que deseja editar</param>
+            <param name="usuario">usuário que deseja editar</param>
         </member>
         <member name="M:Projeto_EDUX.Controllers.UsuarioController.Delete(System.Guid)">
             <summary>
@@ -238,6 +336,31 @@
             </summary>
             <param name="alunoTurma">Lista de alunos da turma</param>
             <returns>Objeto Aluno</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.CategoriaRepository.Adicionar(Projeto_EDUX.Domains.Categoria)">
+            <summary>
+            Adiciona um categoria
+            </summary>
+            <param name="categoria">Nome da categoria</param>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.CategoriaRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Procura uma categoria pelo seu id
+            </summary>
+            <param name="id">Id da categoria</param>
+            <returns>categoria procurado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.CategoriaRepository.Listar">
+            <summary>
+            Listar todos as categorias do sistema
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.CategoriaRepository.Remover(System.Guid)">
+            <summary>
+            Remove uma categoria
+            </summary>
+            <param name="id">Id da categoria</param>
         </member>
         <member name="M:Projeto_EDUX.Repositories.CursoRepository.Adicionar(Projeto_EDUX.Domains.Curso)">
             <summary>
@@ -296,6 +419,31 @@
             Remove uma instituicao
             </summary>
             <param name="id">Id da instituicao</param>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.ObjetivoRepository.Adicionar(Projeto_EDUX.Domains.Objetivo)">
+            <summary>
+            Adiciona um objeto 
+            </summary>
+            <param name="objetivo">Nome do objetivvo </param>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.ObjetivoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Procura um objetivo pelo seu id
+            </summary>
+            <param name="id">Id do objetivo</param>
+            <returns>Curso procurado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.ObjetivoRepository.Listar">
+            <summary>
+            Listar todos os objetivos do sistema
+            </summary>
+            <returns>Lista de objetivos</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.ObjetivoRepository.Remover(System.Guid)">
+            <summary>
+            Listar todos os objetivos do sistema
+            </summary>
+            <returns>Lista de Objetivos</returns>
         </member>
         <member name="M:Projeto_EDUX.Repositories.ProfessorTurmaRepository.Adicionar(Projeto_EDUX.Domains.ProfessorTurma)">
             <summary>

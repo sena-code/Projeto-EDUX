@@ -131,7 +131,4 @@ namespace Projeto_EDUX.Controllers
 
 }
 
-
-
-    }
-}
+ 

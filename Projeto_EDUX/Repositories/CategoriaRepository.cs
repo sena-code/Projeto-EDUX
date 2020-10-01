@@ -20,7 +20,7 @@ namespace Projeto_EDUX.Repositories
         /// <summary>
         /// Adiciona um categoria
         /// </summary>
-        /// <param name="curso">Nome da categoria</param>
+        /// <param name="categoria">Nome da categoria</param>
         public void Adicionar(Categoria categoria)
         {
             try

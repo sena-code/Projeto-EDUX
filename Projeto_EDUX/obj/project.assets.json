@@ -5638,52 +5638,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Vinicius\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\felip\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
->>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
       "projectName": "Projeto_EDUX",
       "projectPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
       "packagesPath": "C:\\Users\\Vinicius\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\obj\\",
-=======
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj",
-      "projectName": "Projeto_EDUX",
-      "projectPath": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\Projeto_EDUX.csproj",
-      "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "D:\\Arquivos organizar pessoal\\senai\\api\\edux\\Projeto_EDUX\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
-      "projectName": "Projeto_EDUX",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\Projeto-EDUX\\Projeto_EDUX\\obj\\",
->>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
->>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-        "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
->>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5758,16 +5725,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
-=======
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
->>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
->>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

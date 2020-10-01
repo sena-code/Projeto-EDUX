@@ -202,7 +202,6 @@ C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml
-<<<<<<< HEAD
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
@@ -210,6 +209,5 @@ C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-=======
 >>>>>>> 9ed6b089379833bf8ea210854eda5ca23d1e053e
 >>>>>>> e6692e66ee0db39c289fba899009c67203cdf1a8
