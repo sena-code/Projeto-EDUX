@@ -108,6 +108,7 @@ namespace Projeto_EDUX.Controllers
         /// Editar um Usuário
         /// </summary>
         /// <param name="id">id do usuário que deseja editar</param>
+        /// /// <param name="usuario">Usuário que deseja editar</param>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, [FromBody] Usuario usuario)
         {
