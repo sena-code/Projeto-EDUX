@@ -23,11 +23,11 @@ namespace Projeto_EDUX.Controllers
             _repo = new DicaRepository();
         }
         // GET: api/<DicaController>
-        [HttpGet]
         /// <summary>
         /// Listar as Dicas
         /// </summary>
         /// <returns></returns>
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -48,12 +48,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // GET api/<DicaController>/5
-        [HttpGet("{id}")]
         /// <summary>
         ///  Buscar dica por Id
         /// </summary>
         /// <param name="id">id da dica</param>
         /// <returns>a dica referente ao id</returns>
+        [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
             try
@@ -76,12 +76,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // POST api/<DicaController>
-        [HttpPost]
         /// <summary>
         /// Adicionar Dica
         /// </summary>
         /// <param name="dica">as informações da dica</param>
         /// <returns>adiciona a dica</returns>
+        [HttpPost]
         public IActionResult Post([FromForm] Dica dica)
         {
             try
@@ -107,13 +107,13 @@ namespace Projeto_EDUX.Controllers
         }
 
         // PUT api/<DicaController>/5
-        [HttpPut("{id}")]
         /// <summary>
         /// Editar uma dica 
         /// </summary>
         /// <param name="id">id da dica</param>
         /// <param name="dica">informações da dica</param>
         /// <returns>a dica alterada</returns>
+        [HttpPut("{id}")]
         public IActionResult Put(Guid id, Dica dica)
         {
             try
@@ -133,11 +133,11 @@ namespace Projeto_EDUX.Controllers
         }
 
         // DELETE api/<DicaController>/5
-        [HttpDelete("{id}")]
         /// <summary>
         /// Excluir uma dica
         /// </summary>
         /// <param name="id">id da dica a ser excluida</param>
+        [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
             try
