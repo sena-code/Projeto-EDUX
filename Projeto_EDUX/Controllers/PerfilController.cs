@@ -23,11 +23,11 @@ namespace Projeto_EDUX.Controllers
             _repo = new PerfilRepository();
         }
         // GET: api/<PerfilController>
-        [HttpGet]
         /// <summary>
         /// Listar as Permições
         /// </summary>
         /// <returns>lista de permissões e id</returns>
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -50,12 +50,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // GET api/<PerfilController>/5
-        [HttpGet("{id}")]
         /// <summary>
         /// Buscar uma permição por ID 
         /// </summary>
         /// <param name="id">Id da permição </param>
         /// <returns>permição do id</returns>
+        [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
             try
@@ -78,12 +78,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // POST api/<PerfilController>
-        [HttpPost]
         /// <summary>
         /// Adicionar uma permição nova          
         /// </summary>
         /// <param name="perfil">é a nova permição</param>
         /// <returns>permição adicionada</returns>
+        [HttpPost]
         public IActionResult Post([FromBody] Perfil perfil)
         {
             try
@@ -101,13 +101,13 @@ namespace Projeto_EDUX.Controllers
         }
 
         // PUT api/<PerfilController>/5
-        [HttpPut("{id}")]
         /// <summary>
         /// Editar uma permição
         /// </summary>
         /// <param name="id">id da permição que deseja editar</param>
         /// <param name="perfil">a permição editada</param>
         /// <returns>a permição editada</returns>
+        [HttpPut("{id}")]
         public IActionResult Put(Guid id, [FromBody] Perfil perfil)
         {
             try
@@ -128,12 +128,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // DELETE api/<PerfilController>/5
-        [HttpDelete("{id}")]
         /// <summary>
         /// Deletar uma permição 
         /// </summary>
         /// <param name="id">id da permição que deseja excluir</param>
         /// <returns>exclui a permição</returns>
+        [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
             try

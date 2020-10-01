@@ -22,13 +22,13 @@ namespace Projeto_EDUX.Controllers
         {
             _repo = new UsuarioRepository();
         }
-      
+
         // GET: api/<UsuarioController>
-        [HttpGet]
         /// <summary>
         /// Listar os Usuários  
         /// </summary>
         /// <returns>Lista de Usuários</returns>
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -49,12 +49,12 @@ namespace Projeto_EDUX.Controllers
         }
 
         // GET api/<UsuarioController>/5
-        [HttpGet("{id}")]
         /// <summary>
         /// Buscar por ID 
         /// </summary>
         /// <param name="id">id da busca</param>
         /// <returns>o usuario do id</returns>
+        [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
             try
@@ -76,6 +76,11 @@ namespace Projeto_EDUX.Controllers
         }
 
         // POST api/<UsuarioController>
+        /// <summary>
+        /// Adiciona um usuario nos sistema
+        /// </summary>
+        /// <param name="usuario">Nome do usuario</param>
+        /// <returns>Usuario cadastrado</returns>
         [HttpPost]
         public IActionResult Post([FromBody] Usuario usuario)
         {
@@ -99,11 +104,11 @@ namespace Projeto_EDUX.Controllers
         }
 
         // PUT api/<UsuarioController>/5
-        [HttpPut("{id}")]
         /// <summary>
         /// Editar um Usuário
         /// </summary>
         /// <param name="id">id do usuário que deseja editar</param>
+        [HttpPut("{id}")]
         public IActionResult Put(Guid id, [FromBody] Usuario usuario)
         {
             try
@@ -125,11 +130,11 @@ namespace Projeto_EDUX.Controllers
         }
 
         // DELETE api/<UsuarioController>/5
-        [HttpDelete("{id}")]
         /// <summary>
         /// Deletar um usuário
         /// </summary>
         /// <param name="id">id do usuário que deseja excluir</param>
+        [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
             try

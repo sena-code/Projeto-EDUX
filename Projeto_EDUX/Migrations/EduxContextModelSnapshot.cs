@@ -19,6 +19,25 @@ namespace Projeto_EDUX.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Projeto_EDUX.Domains.Curso", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdInstituicao")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Titulo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdInstituicao");
+
+                    b.ToTable("Cursos");
+                });
+
             modelBuilder.Entity("Projeto_EDUX.Domains.Dica", b =>
                 {
                     b.Property<Guid>("Id")
@@ -39,6 +58,41 @@ namespace Projeto_EDUX.Migrations
                     b.HasIndex("IdUsuario");
 
                     b.ToTable("Dicas");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Instituicao", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Bairro")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CEP")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Complemento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logradouro")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UF")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Instituicao");
                 });
 
             modelBuilder.Entity("Projeto_EDUX.Domains.Perfil", b =>
@@ -84,6 +138,15 @@ namespace Projeto_EDUX.Migrations
                     b.HasIndex("IdPerfil");
 
                     b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Curso", b =>
+                {
+                    b.HasOne("Projeto_EDUX.Domains.Instituicao", "Instituicao")
+                        .WithMany()
+                        .HasForeignKey("IdInstituicao")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Projeto_EDUX.Domains.Dica", b =>
