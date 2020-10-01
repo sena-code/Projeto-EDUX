@@ -11,8 +11,8 @@ namespace Projeto_EDUX.Domains
         public int IdTurma { get; set; }
         public string descricao { get; set; }
 
-        public Guid IdAluno { get; set; }
-        [Foreignkey("IdCurso")]
+        public Guid IdCurso { get; set; }
+        [ForeignKey("IdCurso")]
         public ObjetivoAluno Objetivo{ get; set; }
     }
 }

@@ -75,7 +75,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<Turma> turma = _ctx.turmas.ToList();
+                List<Turma> turma = _ctx.Turmas.ToList();
 
                 return turma;
             }

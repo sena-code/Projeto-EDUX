@@ -26,6 +26,8 @@ namespace Projeto_EDUX.Controllers
         /// Listar professores
         /// </summary>
         /// <returns>Ok ou badRequest em caso de exceção</returns>
+        ///
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -89,8 +91,10 @@ namespace Projeto_EDUX.Controllers
         /// <summary>
         /// Adicionar professor
         /// </summary>
-        /// <param name="dica">dados do professor</param>
+        /// <param name="professor">dados do professor</param>
         /// <returns>professor adicionado</returns>
+        /// 
+        [HttpPost]
         public IActionResult Post([FromBody] ProfessorTurma professor)
         {
             try

@@ -28,6 +28,8 @@ namespace Projeto_EDUX.Controllers
         /// Listar Curtidas
         /// </summary>
         /// <returns>OK ou BadRequest em caso de exceção</returns>
+        /// 
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -73,7 +75,7 @@ namespace Projeto_EDUX.Controllers
         /// </summary>
         /// <param name="curtida">Vixualização das curtidas</param>
         /// <returns>adiciona curtidas</returns>
-
+        [HttpPost]
         public IActionResult Post([FromForm] Curtida curtida)
         {
             try

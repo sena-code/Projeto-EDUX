@@ -65,7 +65,7 @@ namespace Projeto_EDUX.Repositories
             if (objetivo == null)
                 throw new Exception("Nenhum objetivo encontrado");
            
-            _ctx.objetivos.Remove(objetivo);
+            _ctx.Objetivos.Remove(objetivo);
            
             _ctx.SaveChanges();
         }

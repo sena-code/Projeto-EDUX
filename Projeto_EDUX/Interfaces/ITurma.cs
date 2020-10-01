@@ -8,10 +8,10 @@ namespace Projeto_EDUX.Interfaces
 {
     interface ITurma
     {
-        List<Turma> ListarTodas();
-        Turma BuscarPorID(Guid id);
+        List<Turma> Listar();
+        Turma BuscarPorId(Guid id);
         void Adicionar(Turma turma);
-        void Alterar(Guid id);
+        
         void Editar(Turma Turma);
         void Excluir(Guid id);
     }

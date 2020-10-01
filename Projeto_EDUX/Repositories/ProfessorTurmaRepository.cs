@@ -20,14 +20,14 @@ namespace Projeto_EDUX.Repositories
         /// <summary>
         /// Adiciona um novo professor
         /// </summary>
-        /// <param name="ProfessorTurma">Lista de professores</param>
+        /// <param name="professorTurma">Lista de professores</param>
         /// <returns>Objeto Professor</returns>
 
         public void Adicionar(ProfessorTurma professorTurma)
         {
             try
             {
-                _ctx.professoresTurmas.Add(professorTurma);
+                _ctx.ProfessoresTurmas.Add(professorTurma);
 
                 _ctx.SaveChanges();
             }
@@ -40,7 +40,7 @@ namespace Projeto_EDUX.Repositories
 
         public ProfessorTurma BuscarPorId(Guid id)
         {
-            ProfessorTurma professorTurma = _ctx.professoresTurmas.Find(id);
+            ProfessorTurma professorTurma = _ctx.ProfessoresTurmas.Find(id);
 
             if (professorTurma == null)
                 throw new Exception("ProfessorTurma não localizado");
@@ -55,7 +55,7 @@ namespace Projeto_EDUX.Repositories
 
             if (professorTurma.id == null)
                 throw new Exception("ProfessorTurma não localizado");
-            _ctx.professoresTurmas.Update(professorTurma1);
+            _ctx.ProfessoresTurmas.Update(professorTurma1);
             _ctx.SaveChanges();
 
         }
@@ -64,7 +64,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<ProfessorTurma> professorTurmas = _ctx.professoresTurmas.ToList();
+                List<ProfessorTurma> professorTurmas = _ctx.ProfessoresTurmas.ToList();
                 return professorTurmas;
             }
             catch (Exception ex)
@@ -80,7 +80,7 @@ namespace Projeto_EDUX.Repositories
             ProfessorTurma professorTurma = BuscarPorId(id);
             if (professorTurma == null)
                 throw new Exception("Professor não localizado");
-            _ctx.professoresTurmas.Remove(professorTurma);
+            _ctx.ProfessoresTurmas.Remove(professorTurma);
             _ctx.SaveChanges();
         }
     }

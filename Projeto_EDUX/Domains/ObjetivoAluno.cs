@@ -14,11 +14,11 @@ namespace Projeto_EDUX.Domains
         
         public Guid IdTurma { get; set; }
         [ForeignKey("IdAlunoTurma")]
-        public ObjetivoAluno Objetivo{ get; set; }
+        public AlunoTurma AlunoTurma{ get; set; }
 
 
-        public Guid IdTurma { get; set; }
-        [Foreignkey("IdObjetivo")]
+        public Guid IdObjetivo { get; set; }
+        [ForeignKey("IdObjetivo")]
         public ObjetivoAluno Objetivo { get; set; }
     }
 

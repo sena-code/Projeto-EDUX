@@ -20,7 +20,7 @@ namespace Projeto_EDUX.Repositories
         /// <summary>
         /// Adiciona um novo aluno
         /// </summary>
-        /// <param name="AlunoTurma">Lista de alunos da turma</param>
+        /// <param name="alunoTurma">Lista de alunos da turma</param>
         /// <returns>Objeto Aluno</returns>
         public void Adicionar(AlunoTurma alunoTurma)
         {

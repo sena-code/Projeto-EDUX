@@ -135,3 +135,10 @@ C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
 C:\Users\FamilySilvaFelix\Documents\ESTUDOS\Projeto-EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.xml
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\obj\Debug\netcoreapp3.1\Projeto_EDUX.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Projeto_EDUX.xml
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Vinicius\Desktop\APIs\Projeto_EDUX\Projeto_EDUX\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

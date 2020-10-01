@@ -20,13 +20,13 @@ namespace Projeto_EDUX.Repositories
         /// <summary>
         /// Adiciona uma nova curtida
         /// </summary>
-        /// <param name="Curtida">Lista as curtidas</param>
+        /// <param name="curtida">Lista as curtidas</param>
         /// <returns>Objeto Pedido</returns>
         public void Adicionar(Curtida curtida)
         {
             try
             {
-                _ctx.curtidas.Add(curtida);
+                _ctx.Curtidas.Add(curtida);
                 _ctx.SaveChanges();
             }
             catch (Exception ex)
@@ -38,7 +38,7 @@ namespace Projeto_EDUX.Repositories
 
         public Curtida BuscarPorId(Guid id)
         {
-            Curtida curtida = _ctx.curtidas.Find(id);
+            Curtida curtida = _ctx.Curtidas.Find(id);
             if (curtida == null)
                 throw new Exception("Curtida não localizada");
             return curtida;
@@ -51,7 +51,7 @@ namespace Projeto_EDUX.Repositories
             if (curtida.id == null)
                 throw new Exception("Curtida não localizada");
 
-            _ctx.curtidas.Update(curtida1);
+            _ctx.Curtidas.Update(curtida1);
             _ctx.SaveChanges();
         }
 
@@ -59,7 +59,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<Curtida> curtidas = _ctx.curtidas.ToList();
+                List<Curtida> curtidas = _ctx.Curtidas.ToList();
                 return curtidas;
             }
             catch (Exception ex)
@@ -74,7 +74,7 @@ namespace Projeto_EDUX.Repositories
             if (curtida == null)
                 throw new Exception("Curtida não localizada");
 
-            _ctx.curtidas.Remove(curtida);
+            _ctx.Curtidas.Remove(curtida);
             _ctx.SaveChanges();
         }
     }

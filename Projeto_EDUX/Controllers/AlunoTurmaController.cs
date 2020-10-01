@@ -27,6 +27,8 @@ namespace Projeto_EDUX.Controllers
         /// Listar as Alunos
         /// </summary>
         /// <returns>Ok ou badResquest em caso de exceção</returns>
+        /// 
+        [HttpGet]
         public IActionResult Get()
         {
             try
@@ -45,12 +47,15 @@ namespace Projeto_EDUX.Controllers
 
         // GET api/<AlunoTurmaController>/5
         [HttpGet("{id}")]
+
+#pragma warning disable CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         /// <summary>
         ///  Buscar aluno por Id
         /// </summary>
         /// <param name="id">id do aluno</param>
         /// <returns>Aluno conforme o id</returns>
         public IActionResult Get(Guid id)
+#pragma warning restore CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         {
             try
             {
@@ -93,8 +98,10 @@ namespace Projeto_EDUX.Controllers
         /// <summary>
         /// Adicionar Aluno
         /// </summary>
-        /// <param name="aluno">informações do aluno</param>
+        /// <param name="alunoTurma">informações do aluno</param>
         /// <returns>adiciona aluno</returns>
+        /// 
+        [HttpPost]
         public IActionResult Post([FromBody] AlunoTurma alunoTurma)
         {
             try
@@ -110,13 +117,16 @@ namespace Projeto_EDUX.Controllers
 
         // PUT api/<AlunoTurmaController>/5
         [HttpPut("{id}")]
+
+#pragma warning disable CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         /// <summary>
         /// Editar dados do aluno
         /// </summary>
         /// <param name="id">id da dica</param>
-        /// <param name="alunoTurma"">informações do aluno</param>
-        /// <returns>dados atualizados do aluno </returns>
+        /// <param name="alunoTurma">informações do aluno</param>
+        /// <returns>dados atualizadOs do aluno </returns>
         public IActionResult Put(Guid id, [FromBody] AlunoTurma alunoTurma)
+#pragma warning restore CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         {
             try
             {
@@ -132,11 +142,16 @@ namespace Projeto_EDUX.Controllers
 
         // DELETE api/<AlunoTurmaController>/5
         [HttpDelete("{id}")]
+
+
+
+#pragma warning disable CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         /// <summary>
         /// Excluir aluno
         /// </summary>
         /// <param name="id">id do aluno a ser excluido</param>
         public IActionResult Excluir(Guid id)
+#pragma warning restore CS1587 // O comentário XML não está inserido em um elemento de linguagem válido
         {
             try
             {

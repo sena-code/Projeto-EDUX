@@ -8,11 +8,11 @@ namespace Projeto_EDUX.Interfaces
 {
     interface IObjetivoAluno
     {
-        List<Objetivo> ListarObjetivos();
-        Objetivo BuscPorID(Guid id);
-        void Adicionar(Objetivo objetivo);
-        void Editar(Objetivo objetivo);
-        void Remover(Guid id);
+        List<ObjetivoAluno> Listar();
+        ObjetivoAluno BuscarPorId(Guid id);
+        void Adicionar(ObjetivoAluno objetivo);
+        void Editar(ObjetivoAluno objetivo);
+        void Excluir(Guid id);
 
     }
 }

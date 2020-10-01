@@ -4,6 +4,21 @@
         <name>Projeto_EDUX</name>
     </assembly>
     <members>
+        <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Get">
+            <summary>
+            Listar as Alunos
+            </summary>
+            <returns>Ok ou badResquest em caso de exceção</returns>
+            
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Post(Projeto_EDUX.Domains.AlunoTurma)">
+            <summary>
+            Adicionar Aluno
+            </summary>
+            <param name="alunoTurma">informações do aluno</param>
+            <returns>adiciona aluno</returns>
+            
+        </member>
         <member name="M:Projeto_EDUX.Controllers.CursoController.Get">
             <summary>
             Ler todos os cursos cadastrados
@@ -30,6 +45,20 @@
             </summary>
             <param name="id">ID do curso a ser excluida</param>
             <returns>ID do curso excluido</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CurtidaController.Get">
+            <summary>
+            Listar Curtidas
+            </summary>
+            <returns>OK ou BadRequest em caso de exceção</returns>
+            
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.CurtidaController.Post(Projeto_EDUX.Domains.Curtida)">
+            <summary>
+            Adicionar curtidas
+            </summary>
+            <param name="curtida">Vixualização das curtidas</param>
+            <returns>adiciona curtidas</returns>
         </member>
         <member name="M:Projeto_EDUX.Controllers.DicaController.Get">
             <summary>
@@ -141,6 +170,21 @@
             <param name="id">id da permição que deseja excluir</param>
             <returns>exclui a permição</returns>
         </member>
+        <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Get">
+             <summary>
+             Listar professores
+             </summary>
+             <returns>Ok ou badRequest em caso de exceção</returns>
+            
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Post(Projeto_EDUX.Domains.ProfessorTurma)">
+            <summary>
+            Adicionar professor
+            </summary>
+            <param name="professor">dados do professor</param>
+            <returns>professor adicionado</returns>
+            
+        </member>
         <member name="M:Projeto_EDUX.Controllers.UsuarioController.Get">
             <summary>
             Listar os Usuários  
@@ -173,6 +217,28 @@
             </summary>
             <param name="id">id do usuário que deseja excluir</param>
         </member>
+        <member name="P:Projeto_EDUX.Domains.AlunoTurma.id">
+            <summary>
+            Define a classe alunoTurma
+            </summary>
+        </member>
+        <member name="P:Projeto_EDUX.Domains.Curtida.id">
+            <summary>
+            Define a classe curtida
+            </summary>
+        </member>
+        <member name="P:Projeto_EDUX.Domains.ProfessorTurma.id">
+            <summary>
+            Define a classe professorTurma
+            </summary>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.AlunoTurmaRepository.Adicionar(Projeto_EDUX.Domains.AlunoTurma)">
+            <summary>
+            Adiciona um novo aluno
+            </summary>
+            <param name="alunoTurma">Lista de alunos da turma</param>
+            <returns>Objeto Aluno</returns>
+        </member>
         <member name="M:Projeto_EDUX.Repositories.CursoRepository.Adicionar(Projeto_EDUX.Domains.Curso)">
             <summary>
             Adiciona um curso
@@ -197,6 +263,13 @@
             Remove um curso
             </summary>
             <param name="id">Id do curso</param>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.CurtidaRepository.Adicionar(Projeto_EDUX.Domains.Curtida)">
+            <summary>
+            Adiciona uma nova curtida
+            </summary>
+            <param name="curtida">Lista as curtidas</param>
+            <returns>Objeto Pedido</returns>
         </member>
         <member name="M:Projeto_EDUX.Repositories.InstituicaoRepository.BuscarPorId(System.Guid)">
             <summary>
@@ -223,6 +296,13 @@
             Remove uma instituicao
             </summary>
             <param name="id">Id da instituicao</param>
+        </member>
+        <member name="M:Projeto_EDUX.Repositories.ProfessorTurmaRepository.Adicionar(Projeto_EDUX.Domains.ProfessorTurma)">
+            <summary>
+            Adiciona um novo professor
+            </summary>
+            <param name="professorTurma">Lista de professores</param>
+            <returns>Objeto Professor</returns>
         </member>
     </members>
 </doc>
