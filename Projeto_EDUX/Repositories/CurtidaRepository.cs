@@ -43,7 +43,7 @@ namespace Projeto_EDUX.Repositories
                 throw new Exception("Curtida não localizada");
             return curtida;
         }
-
+/*
         public void Editar(Curtida curtida)
         {
             Curtida curtida1 = BuscarPorId(curtida.id);
@@ -66,7 +66,7 @@ namespace Projeto_EDUX.Repositories
             {
                 throw new Exception(ex.Message);
             }
-        }
+        }*/
 
         public void Excluir(Guid id)
         {
