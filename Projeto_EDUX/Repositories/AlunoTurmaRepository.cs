@@ -51,9 +51,9 @@ namespace Projeto_EDUX.Repositories
 
         public void Editar(AlunoTurma alunoTurma)
         {
-            AlunoTurma alunoTurma1 = BuscarPorId(alunoTurma.id);
+            AlunoTurma alunoTurma1 = BuscarPorId(alunoTurma.Id);
 
-            if (alunoTurma.id == null)
+            if (alunoTurma.Id == null)
                 _ctx.AlunosTurmas.Update(alunoTurma1);
             _ctx.SaveChanges();
         }

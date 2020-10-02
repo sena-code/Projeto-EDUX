@@ -130,7 +130,7 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
-                alunoTurma.id = id;
+                alunoTurma.Id = id;
                 _repo.Editar(alunoTurma);
                 return Ok(alunoTurma);
             }

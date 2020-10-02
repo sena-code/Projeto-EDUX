@@ -51,9 +51,9 @@ namespace Projeto_EDUX.Repositories
 
         public void Editar(ProfessorTurma professorTurma)
         {
-            ProfessorTurma professorTurma1 = BuscarPorId(professorTurma.id);
+            ProfessorTurma professorTurma1 = BuscarPorId(professorTurma.Id);
 
-            if (professorTurma.id == null)
+            if (professorTurma.Id == null)
                 throw new Exception("ProfessorTurma não localizado");
             _ctx.ProfessoresTurmas.Update(professorTurma1);
             _ctx.SaveChanges();
