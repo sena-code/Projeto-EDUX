@@ -50,7 +50,7 @@ namespace Projeto_EDUX.Controllers
                 return BadRequest(new
                 {
                     statusCode = 400,
-                    error = "Envie um email para email@email.com informando que ocorreu um erro no endpoint Get/produtos"
+                    error = "Envie um email para email@email.com informando que ocorreu um erro no endpoint Get/curso"
                 });
             }
         }

@@ -11,16 +11,15 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class CursoController : ControllerBase
     {
-        private readonly ICurso _crusoRepository;
+        private readonly ICurso _cursoRepository;
 
         public  CursoController()
         {
-            _crusoRepository = new CursoRepository();
+            _cursoRepository = new CursoRepository();
         }
 
         // GET api/<CursoController>
@@ -34,15 +33,15 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
-                var instituicoes = _crusoRepository.Listar();
+                var cursos = _cursoRepository.Listar();
 
-                if (instituicoes.Count == 0)
+                if (cursos.Count == 0)
                     return NoContent();
 
                 return Ok(new
                 {
-                    totalCount = instituicoes.Count,
-                    data = instituicoes
+                    totalCount = cursos.Count,
+                    data = cursos
                 });
             }
             catch (Exception)
@@ -50,7 +49,7 @@ namespace Projeto_EDUX.Controllers
                 return BadRequest(new
                 {
                     statusCode = 400,
-                    error = "Envie um email para email@email.com informando que ocorreu um erro no endpoint Get/produtos"
+                    error = "Envie um email para email@email.com informando que ocorreu um erro no endpoint Get/curso"
                 });
             }
         }
@@ -67,7 +66,7 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
-                Curso curso = _crusoRepository.BuscarPorId(id);
+                Curso curso = _cursoRepository.BuscarPorId(id);
 
                 if (curso == null)
                     return NotFound();
@@ -91,7 +90,7 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
-                _crusoRepository.Adicionar(curso);
+                _cursoRepository.Adicionar(curso);
 
                 return Ok(curso);
             }
@@ -113,11 +112,11 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
-                var curso = _crusoRepository.BuscarPorId(id);
+                var curso = _cursoRepository.BuscarPorId(id);
                 if (curso == null)
                     return NotFound();
 
-                _crusoRepository.Remover(id);
+                _cursoRepository.Remover(id);
 
                 return Ok(curso);
             }

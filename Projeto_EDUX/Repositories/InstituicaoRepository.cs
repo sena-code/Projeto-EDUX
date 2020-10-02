@@ -83,7 +83,7 @@ namespace Projeto_EDUX.Repositories
                 Instituicao instituicao = BuscarPorId(id);
 
                 if (instituicao == null)
-                    throw new Exception("Curso não encontrado");
+                    throw new Exception("Instituicao não encontrada");
 
                 _ctx.Instituicao.Remove(instituicao);
                 _ctx.SaveChanges();

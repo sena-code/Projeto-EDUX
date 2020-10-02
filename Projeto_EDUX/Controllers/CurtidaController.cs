@@ -23,7 +23,7 @@ namespace Projeto_EDUX.Controllers
             _repo = new CurtidaRepository();
         }
 
-        // GET: api/<CurtidaController>
+/*        // GET: api/<CurtidaController>
         /// <summary>
         /// Listar Curtidas
         /// </summary>
@@ -45,7 +45,7 @@ namespace Projeto_EDUX.Controllers
             {
                 return BadRequest(ex);
             }
-        }
+        }*/
 
         // GET api/<CurtidaController>/5
          /// <summary>
@@ -89,7 +89,7 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
-        // PUT api/<CurtidaController>/
+/*        // PUT api/<CurtidaController>/
         /// <summary>
         /// Editar a curtida
         /// </summary>
@@ -109,7 +109,7 @@ namespace Projeto_EDUX.Controllers
             {
                 return BadRequest(ex);
             }
-        }
+        }*/
 
         // DELETE api/<CurtidaController>/5
         /// <summary>

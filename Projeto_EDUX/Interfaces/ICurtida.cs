@@ -8,10 +8,8 @@ namespace Projeto_EDUX.Interfaces
 {
     interface ICurtida
     {
-        List<Curtida> Listar();
         Curtida BuscarPorId(Guid id);
         void Adicionar(Curtida curtida);
-        void Editar(Curtida curtida);
         void Excluir(Guid id);
     }
 }

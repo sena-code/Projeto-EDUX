@@ -7,18 +7,8 @@ using System.Threading.Tasks;
 
 namespace Projeto_EDUX.Domains
 {
-    public class Curtida
+    public class Curtida : BaseDomains
     {
-        /// <summary>
-        /// Define a classe curtida
-        /// </summary>
-        [Key]
-        public Guid id { get; set; }
-
-
-        public Curtida()
-        {
-            id = Guid.NewGuid();
-        }
+        
     }
 }
