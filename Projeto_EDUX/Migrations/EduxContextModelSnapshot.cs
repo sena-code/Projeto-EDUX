@@ -19,6 +19,34 @@ namespace Projeto_EDUX.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Projeto_EDUX.Domains.AlunoTurma", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("matricula")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("AlunosTurmas");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Categoria", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Tipo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categoria");
+                });
+
             modelBuilder.Entity("Projeto_EDUX.Domains.Curso", b =>
                 {
                     b.Property<Guid>("Id")
@@ -36,6 +64,17 @@ namespace Projeto_EDUX.Migrations
                     b.HasIndex("IdInstituicao");
 
                     b.ToTable("Cursos");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Curtida", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Curtidas");
                 });
 
             modelBuilder.Entity("Projeto_EDUX.Domains.Dica", b =>
@@ -95,6 +134,52 @@ namespace Projeto_EDUX.Migrations
                     b.ToTable("Instituicao");
                 });
 
+            modelBuilder.Entity("Projeto_EDUX.Domains.Objetivo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("IdCategoria")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdCategoria");
+
+                    b.ToTable("Objetivo");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.ObjetivoAluno", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataAlcancada")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IdAlunoTurma")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdObjetivo")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<float>("Nota")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdAlunoTurma");
+
+                    b.HasIndex("IdObjetivo");
+
+                    b.ToTable("ObjetivosAlunos");
+                });
+
             modelBuilder.Entity("Projeto_EDUX.Domains.Perfil", b =>
                 {
                     b.Property<Guid>("Id")
@@ -107,6 +192,42 @@ namespace Projeto_EDUX.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Perfils");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.ProfessorTurma", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("ProfessoresTurmas");
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Turma", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdCurso")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("IdTurma")
+                        .HasColumnType("int");
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdCurso");
+
+                    b.ToTable("Turmas");
                 });
 
             modelBuilder.Entity("Projeto_EDUX.Domains.Usuario", b =>
@@ -154,6 +275,39 @@ namespace Projeto_EDUX.Migrations
                     b.HasOne("Projeto_EDUX.Domains.Usuario", "Usuario")
                         .WithMany()
                         .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Objetivo", b =>
+                {
+                    b.HasOne("Projeto_EDUX.Domains.Categoria", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("IdCategoria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.ObjetivoAluno", b =>
+                {
+                    b.HasOne("Projeto_EDUX.Domains.AlunoTurma", "AlunoTurma")
+                        .WithMany()
+                        .HasForeignKey("IdAlunoTurma")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projeto_EDUX.Domains.Objetivo", "Objetivo")
+                        .WithMany()
+                        .HasForeignKey("IdObjetivo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Turma", b =>
+                {
+                    b.HasOne("Projeto_EDUX.Domains.Curso", "Curso")
+                        .WithMany()
+                        .HasForeignKey("IdCurso")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

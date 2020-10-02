@@ -21,7 +21,7 @@ namespace Projeto_EDUX.Repositories
             try
             {
                 
-                _ctx.Objetivos.Add(objetivo);
+                _ctx.ObjetivosAlunos.Add(objetivo);
               
                 _ctx.SaveChanges();
             }
@@ -35,7 +35,7 @@ namespace Projeto_EDUX.Repositories
         public ObjetivoAluno BuscarPorId(Guid Id)
         {
             
-            ObjetivoAluno objetivo = _ctx.Objetivos.Find(Id);
+            ObjetivoAluno objetivo = _ctx.ObjetivosAlunos.Find(Id);
            
             if (objetivo == null)
                 throw new Exception("Não foi possível achar nenhum objetivo");
@@ -51,7 +51,7 @@ namespace Projeto_EDUX.Repositories
             if (objetivo.Id == null)
                 throw new Exception("Nenhum objetivo encontrado");
            
-            _ctx.Objetivos.Update(objetivonew);
+            _ctx.ObjetivosAlunos.Update(objetivonew);
            
             _ctx.SaveChanges();
 
@@ -65,7 +65,7 @@ namespace Projeto_EDUX.Repositories
             if (objetivo == null)
                 throw new Exception("Nenhum objetivo encontrado");
            
-            _ctx.Objetivos.Remove(objetivo);
+            _ctx.ObjetivosAlunos.Remove(objetivo);
            
             _ctx.SaveChanges();
         }
@@ -74,7 +74,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<ObjetivoAluno> objetivo = _ctx.Objetivos.ToList();
+                List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.ToList();
 
                 return objetivo;
             }

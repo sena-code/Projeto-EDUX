@@ -7,19 +7,15 @@ using System.Threading.Tasks;
 
 namespace Projeto_EDUX.Domains
 {
-    public class ProfessorTurma
+    public class ProfessorTurma : BaseDomains
     {
         /// <summary>
         /// Define a classe professorTurma
         /// </summary>
-        [Key]
-        public Guid id { get; set; }
+      
         public string descricao { get; set; }
 
 
-        public ProfessorTurma()
-        {
-            id = Guid.NewGuid();
-        }
+        
     }
 }

@@ -50,10 +50,7 @@ namespace Projeto_EDUX.Controllers
         /// <param name="id">id do professor</param>
         /// <returns>dados do professsor através do id</returns>
         [HttpGet("{id}")]
-<<<<<<< HEAD
-      
-=======
->>>>>>> c4a095c887177572a87488693034a84a1215717f
+
         public IActionResult Get(Guid id)
         {
             try
@@ -120,10 +117,7 @@ namespace Projeto_EDUX.Controllers
         /// <param name="professorTurma">dados do professor</param>
         /// <returns>dados do professor adicionado ok</returns>
         [HttpPut("{id}")]
-<<<<<<< HEAD
-        
-=======
->>>>>>> c4a095c887177572a87488693034a84a1215717f
+
         public IActionResult Put(Guid id, [FromBody] ProfessorTurma professorTurma)
         {
             try
@@ -144,10 +138,7 @@ namespace Projeto_EDUX.Controllers
         /// </summary>
         /// <param name="id">id do cadastro correspondente ao professor a ser excluida</param>
         [HttpDelete("{id}")]
-<<<<<<< HEAD
-        
-=======
->>>>>>> c4a095c887177572a87488693034a84a1215717f
+
         public IActionResult Delete(Guid id)
         {
             try

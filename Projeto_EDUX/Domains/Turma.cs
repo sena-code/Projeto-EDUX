@@ -13,6 +13,6 @@ namespace Projeto_EDUX.Domains
 
         public Guid IdCurso { get; set; }
         [ForeignKey("IdCurso")]
-        public ObjetivoAluno Objetivo{ get; set; }
+        public Curso Curso{ get; set; }
     }
 }

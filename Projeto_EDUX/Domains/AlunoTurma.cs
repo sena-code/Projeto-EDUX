@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Projeto_EDUX.Domains
 {
-    public class AlunoTurma
+    public class AlunoTurma : BaseDomains
     {
         /// <summary>
         /// Define a classe alunoTurma
         /// </summary>
-        [Key]
-        public Guid id { get; set; }
+       
         public string matricula { get; set; }
 
     }
