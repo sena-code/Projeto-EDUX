@@ -12,7 +12,7 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador")]
+   // [Authorize(Roles = "Administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class PerfilController : ControllerBase

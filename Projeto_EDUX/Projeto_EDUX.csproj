@@ -29,5 +29,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
   </ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Domains\AlunoTurma.cs">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Compile>
+	</ItemGroup>
+
 
 </Project>

@@ -93,29 +93,20 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
-<<<<<<< HEAD
 
         // PUT api/<CurtidaController>/5
 
         
 
-=======
-/*        // PUT api/<CurtidaController>/
->>>>>>> 6f9c724915792b2d205cfcd628b456185a43ea34
-        /// <summary>
-        /// Editar a curtida
-        /// </summary>
-        /// <param name="id">id da curtida </param>
-        /// <param name="curtida">vizualizações da curtida </param>
-        /// <returns>Curtida alterada</returns>
-        [HttpPut("{id}")]
+
+        
 
 
-        public IActionResult Put(Guid id, Curtida curtida)
+       /* public IActionResult Put(Guid id, Curtida curtida)
         {
             try
             {
-                curtida.id = id;
+                curtida.Id = id;
                 _repo.Editar(curtida);
                 return Ok(curtida);
             }

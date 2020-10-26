@@ -12,15 +12,10 @@ namespace Projeto_EDUX.Context
         public DbSet<Dica> Dicas { get; set; }
         public DbSet<Perfil> Perfils { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
-
-
         public DbSet<Objetivo> Objetivo { get; set; }
         public DbSet<Categoria> Categoria { get; set; }
-
         public DbSet<Curso> Cursos { get; set; }
         public DbSet<Instituicao> Instituicao { get; set; }
-
-
         public DbSet<ObjetivoAluno> ObjetivosAlunos { get; set; }
         public DbSet<Turma> Turmas { get; set; }
         public DbSet<AlunoTurma> AlunosTurmas { get; set; }
@@ -31,7 +26,7 @@ namespace Projeto_EDUX.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-                optionsBuilder.UseSqlServer(@"Data Source = VINICIUS\SQLEXPRESS; Initial Catalog = edux; User ID = sa; Password = sa132");
+                optionsBuilder.UseSqlServer(@"Data Source = .\SQLEXPRESS; Initial Catalog = eduxcorrigido; User ID = sa; Password = sa132;");
         }
 
 

@@ -9,13 +9,9 @@ namespace Projeto_EDUX.Domains
 {
     public class Curtida : BaseDomains
     {
-<<<<<<< HEAD
-        /// <summary>
-        /// Define a classe curtida
-        /// </summary>
-       
-=======
+
         
+
+
     }
->>>>>>> 6f9c724915792b2d205cfcd628b456185a43ea34
 }

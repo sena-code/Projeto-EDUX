@@ -12,7 +12,7 @@ using Projeto_EDUX.Utils;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador")]
+    [Authorize(Roles = "Comum, Administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class DicaController : ControllerBase
@@ -81,6 +81,7 @@ namespace Projeto_EDUX.Controllers
         /// </summary>
         /// <param name="dica">as informações da dica</param>
         /// <returns>adiciona a dica</returns>
+        
         [HttpPost]
         public IActionResult Post([FromForm] Dica dica)
         {
@@ -113,6 +114,8 @@ namespace Projeto_EDUX.Controllers
         /// <param name="id">id da dica</param>
         /// <param name="dica">informações da dica</param>
         /// <returns>a dica alterada</returns>
+        /// 
+        [Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Dica dica)
         {
@@ -137,6 +140,7 @@ namespace Projeto_EDUX.Controllers
         /// Excluir uma dica
         /// </summary>
         /// <param name="id">id da dica a ser excluida</param>
+        [Authorize(Roles = "Administrador")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

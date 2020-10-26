@@ -19,8 +19,8 @@ namespace Projeto_EDUX.Domains
 
         public string Cidade { get; set; }
 
-        public string UF { get; set; }
+        public string Uf { get; set; }
 
-        public string CEP { get; set; }
+        public string Cep { get; set; }
     }
 }

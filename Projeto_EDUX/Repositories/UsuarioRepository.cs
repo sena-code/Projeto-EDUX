@@ -20,6 +20,8 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
+                usuario.DataCadastro = DateTime.Now;
+                usuario.DataUltimoAcesso = DateTime.Now;
                 // adiciona as informações que estão no body
                 _ctx.Usuario.Add(usuario);
                 // Salva as mudanças 

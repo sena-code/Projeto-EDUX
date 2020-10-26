@@ -5638,14 +5638,11 @@
     ]
   },
   "packageFolders": {
-
     "C:\\Users\\Vinicius\\.nuget\\packages\\": {}
-
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-
       "projectUniqueName": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
       "projectName": "Projeto_EDUX",
       "projectPath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
@@ -5654,7 +5651,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
-
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5729,18 +5725,8 @@
             "privateAssets": "all"
           }
         },
-
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
-
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
