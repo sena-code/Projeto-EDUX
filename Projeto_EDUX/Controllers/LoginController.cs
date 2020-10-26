@@ -86,7 +86,7 @@ namespace Projeto_EDUX.Controllers
             if (user != null)
             {
                 var tokenString = GenerateJSONWebToken(user);
-                response = Ok(new { token = tokenString });
+                response = Ok(new { token = tokenString ,  DataAcesso = DateTime.Now});
             }
 
             return response;

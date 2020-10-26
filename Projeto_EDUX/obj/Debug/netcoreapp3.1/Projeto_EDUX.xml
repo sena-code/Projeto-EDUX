@@ -11,6 +11,14 @@
             <returns>Ok ou badResquest em caso de exceção</returns>
             
         </member>
+        <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Get(System.Guid)">
+             <summary>
+              Buscar aluno por Id
+             </summary>
+             <param name="id">id do aluno</param>
+             <returns>Aluno conforme o id</returns>
+            
+        </member>
         <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Post(Projeto_EDUX.Domains.AlunoTurma)">
             <summary>
             Adicionar Aluno
@@ -18,6 +26,20 @@
             <param name="alunoTurma">informações do aluno</param>
             <returns>adiciona aluno</returns>
             
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Put(System.Guid,Projeto_EDUX.Domains.AlunoTurma)">
+            <summary>
+            Editar dados do aluno
+            </summary>
+            <param name="id">id da dica</param>
+            <param name="alunoTurma">informações do aluno</param>
+            <returns>dados atualizadOs do aluno </returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.AlunoTurmaController.Excluir(System.Guid)">
+            <summary>
+            Excluir aluno
+            </summary>
+            <param name="id">id do aluno a ser excluido</param>
         </member>
         <member name="M:Projeto_EDUX.Controllers.CategoriaController.Get">
             <summary>
@@ -170,6 +192,41 @@
             <param name="login">Login do usuario</param>
             <returns>Usuario logado</returns>
         </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoAlunoController.Get">
+            <summary>
+            Lista todos os objetivos feitos pelos alunos
+            </summary>
+            <returns>Objetivos cumpridos</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoAlunoController.Get(System.Guid)">
+            <summary>
+            Busca determinado objetivo pelo ID
+            </summary>
+            <param name="id">Id do objetivo cumprido</param>
+            <returns>Objetivo encontrado</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoAlunoController.Post(Projeto_EDUX.Domains.ObjetivoAluno)">
+            <summary>
+            Adiciona dados de avaliação do objetivo proposto
+            </summary>
+            <param name="objetivo">Dados do aluno</param>
+            <returns>Dados adicionados</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoAlunoController.Put(System.Guid,Projeto_EDUX.Domains.ObjetivoAluno)">
+            <summary>
+            Alterar dados de avaliação do objetivo
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <param name="objetivo">Objetivo proposto</param>
+            <returns>Dados alterados</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.ObjetivoAlunoController.Delete(System.Guid)">
+            <summary>
+            Deleta dados de avaliação de objetivos propostos
+            </summary>
+            <param name="id">Id do objetivo</param>
+            <returns>Dados deletados</returns>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.ObjetivoController.Get">
             <summary>
             Ler todos os Objetivos cadastrados
@@ -267,6 +324,41 @@
             Excluir um cadastro de professor
             </summary>
             <param name="id">id do cadastro correspondente ao professor a ser excluida</param>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.TurmaController.Get">
+            <summary>
+            Lista todas as turmas
+            </summary>
+            <returns>Lista de turmas</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.TurmaController.Get(System.Guid)">
+            <summary>
+            Busca uma turma pelo seu ID
+            </summary>
+            <param name="id">Id de turma</param>
+            <returns>Turma procurada</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.TurmaController.Post(Projeto_EDUX.Domains.Turma)">
+            <summary>
+            Adiciona uma turma no sistema
+            </summary>
+            <param name="turma">Turma a ser adicionada</param>
+            <returns>Turma adicionada</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.TurmaController.Put(System.Guid,Projeto_EDUX.Domains.Turma)">
+            <summary>
+            Alterar dados de uma turma
+            </summary>
+            <param name="id">Id da turma</param>
+            <param name="turma">Turma a ser alterada</param>
+            <returns>Turma alterada</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.TurmaController.Delete(System.Guid)">
+            <summary>
+            Remove uma turma do sistema
+            </summary>
+            <param name="id">Id da turma</param>
+            <returns>Turma removida</returns>
         </member>
         <member name="M:Projeto_EDUX.Controllers.UsuarioController.Get">
             <summary>

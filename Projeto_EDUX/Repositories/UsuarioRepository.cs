@@ -100,6 +100,8 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
+           
+
                 //pega a lista de usuarios
                 List<Usuario> usuarios = _ctx.Usuario.ToList();
                 //retorna essa lista 

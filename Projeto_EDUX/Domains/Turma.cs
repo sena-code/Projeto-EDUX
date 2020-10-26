@@ -8,7 +8,6 @@ namespace Projeto_EDUX.Domains
 {
     public class Turma : BaseDomains
     {
-        public int IdTurma { get; set; }
         public string Descricao { get; set; }
 
         public Guid IdCurso { get; set; }

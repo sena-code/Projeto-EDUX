@@ -33,6 +33,7 @@ namespace Projeto_EDUX.Controllers
         {
             try
             {
+              
                 // coloca o método como uma variavel para dar de retorno
                 var usuario = _repo.Listar();
                 //Caso não tiver nenhum usuário retorna isso
