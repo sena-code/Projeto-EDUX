@@ -38,7 +38,7 @@ namespace Projeto_EDUX.Controllers
                 if (dicas.Count == 0)
                     return NoContent();
                 //retorna a lista de dicas
-                return Ok(dicas);
+                return Ok(new { data = dicas});
             }
             catch (Exception ex)
             {

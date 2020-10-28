@@ -79,7 +79,14 @@ namespace Projeto_EDUX
                 c.IncludeXmlComments(xmlPath);
 
             });
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
+            
         }
 
 
@@ -97,7 +104,11 @@ namespace Projeto_EDUX
 
             app.UseAuthorization();
 
+            app.UseCors("CorsPolicy");
+
             app.UseSwagger();
+
+            app.UseStaticFiles();
 
             app.UseSwaggerUI(c =>
             {

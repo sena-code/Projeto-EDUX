@@ -25,7 +25,7 @@ namespace Projeto_EDUX.Utils
             //Executo o comando de criação do arquivo no local informado 
             file.CopyTo(streamImagem);
 
-            return "http://localhost:54821/upload/imagem/" + nomeArquivo;
+            return "http://localhost:50447/upload/imagem/" + nomeArquivo;
         }
     }
 }
