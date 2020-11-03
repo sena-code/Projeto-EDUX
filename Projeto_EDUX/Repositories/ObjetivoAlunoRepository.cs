@@ -47,6 +47,10 @@ namespace Projeto_EDUX.Repositories
         {
            
             ObjetivoAluno objetivonew = BuscarPorId(objetivo.Id);
+            objetivonew.DataAlcancada = objetivo.DataAlcancada;
+            objetivonew.IdAlunoTurma = objetivo.IdAlunoTurma;
+            objetivonew.Nota = objetivo.Nota;
+            objetivonew.IdObjetivo = objetivo.IdObjetivo;
             
             if (objetivo.Id == null)
                 throw new Exception("Nenhum objetivo encontrado");

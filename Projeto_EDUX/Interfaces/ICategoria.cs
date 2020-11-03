@@ -13,6 +13,8 @@ namespace Projeto_EDUX.Interfaces
         //Metodo para buscar um curso pelo id
         Categoria BuscarPorId(Guid id);
 
+        void Atualizar(Categoria categoria);
+
         //Metodo que adiciona um curso no sistema, com os seus respectivos dados
         void Adicionar(Categoria categoria);
 

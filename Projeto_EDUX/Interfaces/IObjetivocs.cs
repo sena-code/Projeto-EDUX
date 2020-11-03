@@ -12,6 +12,8 @@ namespace Projeto_EDUX.Interfaces
         List<Objetivo> Listar();
         //Metodo para buscar um curso pelo id
         Objetivo BuscarPorId(Guid id);
+       
+        void Editar(Objetivo objetivo);
 
         //Metodo que adiciona um curso no sistema, com os seus respectivos dados
         void Adicionar(Objetivo  objetivo);

@@ -33,6 +33,29 @@ namespace Projeto_EDUX.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public void Atualizar(Categoria categoria)
+        {
+            try
+            {
+                //Aqui busca um perfil pelo o Id
+                Categoria newcategoria = BuscarPorId(categoria.Id);
+
+                //Verificar se o Perfil do Id selecionado existe
+                if (newcategoria == null)
+                    throw new Exception("Objetivo não encontrado");
+
+                //aqui ele vai dar um update nas informação do perfil
+                _ctx.Categoria.Update(newcategoria);
+
+                //Irá salvar as mudanças
+                _ctx.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
 
         /// <summary>
         /// Procura uma categoria pelo seu id

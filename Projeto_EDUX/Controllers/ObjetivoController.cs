@@ -33,6 +33,7 @@ namespace Projeto_EDUX.Controllers
             try
             {
                 var descricao = _objetivoRepository.Listar();
+                
 
                 if (descricao.Count == 0)
                     return NoContent();
@@ -93,17 +94,34 @@ namespace Projeto_EDUX.Controllers
         /// <param name="objetivo">objetivo</param>
         /// <returns>objetivo cadastrado</returns>
         [HttpPost]
-        public IActionResult Post(Objetivo objetivo)
+        public IActionResult Post([FromBody] Objetivo objetivo)
         {
             try
             {
+               
                 _objetivoRepository.Adicionar(objetivo);
+
 
                 return Ok(objetivo);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, Objetivo objetivo)
+        {
+            try
+            {
+                objetivo.Id = id;
+                _objetivoRepository.Editar(objetivo);
+                return Ok(objetivo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
             }
         }
 

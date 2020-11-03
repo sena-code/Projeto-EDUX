@@ -40,7 +40,11 @@ namespace Projeto_EDUX.Controllers
                     return NoContent();
 
                 //caso tiver tudo ok retorna os perfils
-                return Ok(perfils);
+                return Ok(new
+                {
+                    totalCount = perfils.Count,
+                    data = perfils
+                });
             }
             catch (Exception ex)
             {

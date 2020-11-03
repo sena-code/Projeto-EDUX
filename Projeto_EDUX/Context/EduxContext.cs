@@ -21,6 +21,7 @@ namespace Projeto_EDUX.Context
         public DbSet<AlunoTurma> AlunosTurmas { get; set; }
         public DbSet<ProfessorTurma> ProfessoresTurmas { get; set; }
         public DbSet<Curtida> Curtidas { get; set; }
+        public DbSet<Post> Posts { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

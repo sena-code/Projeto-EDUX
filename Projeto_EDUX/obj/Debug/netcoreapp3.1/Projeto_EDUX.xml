@@ -289,6 +289,42 @@
             <param name="id">id da permição que deseja excluir</param>
             <returns>exclui a permição</returns>
         </member>
+        <member name="M:Projeto_EDUX.Controllers.PostController.Get">
+            <summary>
+            Listar as Dicas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.PostController.Get(System.Guid)">
+            <summary>
+             Buscar dica por Id
+            </summary>
+            <param name="id">id da dica</param>
+            <returns>a dica referente ao id</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.PostController.Post(Projeto_EDUX.Domains.Post)">
+            <summary>
+            Adicionar Dica
+            </summary>
+            <param name="post"></param>
+            <param name="dica">as informações da dica</param>
+            <returns>adiciona a dica</returns>
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.PostController.Put(System.Guid,Projeto_EDUX.Domains.Post)">
+            <summary>
+            Editar uma dica 
+            </summary>
+            <param name="id">id da dica</param>
+            <param name="dica">informações da dica</param>
+            <returns>a dica alterada</returns>
+            
+        </member>
+        <member name="M:Projeto_EDUX.Controllers.PostController.Delete(System.Guid)">
+            <summary>
+            Excluir uma dica
+            </summary>
+            <param name="id">id da dica a ser excluida</param>
+        </member>
         <member name="M:Projeto_EDUX.Controllers.ProfessorTurmaController.Get">
              <summary>
              Listar professores

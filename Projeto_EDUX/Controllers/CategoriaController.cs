@@ -55,6 +55,33 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Administrador")]
+        public IActionResult Alterar(Guid id, Categoria categoria)
+        {
+            try
+            {
+                Categoria cat = _categoriaRepository.BuscarPorId(id);
+
+                if (cat == null)
+                {
+                    return NotFound();
+                }
+
+                cat.Tipo = categoria.Tipo;
+                
+
+                _categoriaRepository.Atualizar(cat);
+
+                return Ok(new { data = cat });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
 
         // GET api/<CategoriaController>/5
         /// <summary>

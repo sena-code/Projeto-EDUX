@@ -52,15 +52,15 @@ namespace Projeto_EDUX.Controllers
                     });
                 }
             }
+       
+        // GET api/<TurmaController>/5
 
-             // GET api/<TurmaController>/5
-
-            /// <summary>
-            /// Busca uma turma pelo seu ID
-            /// </summary>
-            /// <param name="id">Id de turma</param>
-            /// <returns>Turma procurada</returns>
-            [HttpGet("{id}")]
+        /// <summary>
+        /// Busca uma turma pelo seu ID
+        /// </summary>
+        /// <param name="id">Id de turma</param>
+        /// <returns>Turma procurada</returns>
+        [HttpGet("{id}")]
             public IActionResult Get(Guid id)
             {
                 try

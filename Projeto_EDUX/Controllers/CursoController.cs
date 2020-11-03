@@ -99,6 +99,20 @@ namespace Projeto_EDUX.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, Curso curso)
+        {
+            try
+            {
+                curso.Id = id;
+                _cursoRepository.Editar(curso);
+                return Ok(curso);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
 
         // DELETE api/<CursoController>/5
         /// <summary>

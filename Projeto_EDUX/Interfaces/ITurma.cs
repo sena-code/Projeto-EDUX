@@ -11,6 +11,7 @@ namespace Projeto_EDUX.Interfaces
         List<Turma> Listar();
         Turma BuscarPorId(Guid id);
         void Adicionar(Turma turma);
+
         
         void Editar(Turma Turma);
         void Excluir(Guid id);

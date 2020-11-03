@@ -52,6 +52,22 @@ namespace Projeto_EDUX.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public void Editar(Curso curso)
+        {
+
+           Curso cursonew = BuscarPorId(curso.Id);
+            cursonew.IdInstituicao = curso.IdInstituicao;
+            cursonew.Titulo = curso.Titulo;
+            
+
+            if (curso.Id == null)
+                throw new Exception("Nenhum objetivo encontrado");
+
+            _ctx.Cursos.Update(cursonew);
+
+            _ctx.SaveChanges();
+
+        }
 
         /// <summary>
         /// Listar todos os cursos do sistema

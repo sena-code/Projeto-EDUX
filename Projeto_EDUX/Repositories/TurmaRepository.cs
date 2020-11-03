@@ -32,6 +32,22 @@ namespace Projeto_EDUX.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public void Editar(Turma turma)
+        {
+
+            Turma turmanew = BuscarPorId(turma.Id);
+            turmanew.Descricao = turma.Descricao;
+            turmanew.IdCurso = turma.IdCurso;
+
+
+            if (turma.Id == null)
+                throw new Exception("Nenhum objetivo encontrado");
+
+            _ctx.Turmas.Update(turmanew);
+
+            _ctx.SaveChanges();
+
+        }
 
         public Turma BuscarPorId(Guid Id)
         {
@@ -44,19 +60,7 @@ namespace Projeto_EDUX.Repositories
             return turma;
         }
 
-        public void Editar(Turma turma)
-        {
-            
-            Turma turmanew = BuscarPorId(turma.Id);
-            
-            if (turma.Id == null)
-                throw new Exception("Nenhuma turma encontrada");
-           
-            _ctx.Turmas.Update(turmanew);
-           
-            _ctx.SaveChanges();
-
-        }
+       
 
         public void Excluir(Guid id)
         {

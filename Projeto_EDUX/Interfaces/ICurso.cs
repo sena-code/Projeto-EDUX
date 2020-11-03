@@ -19,5 +19,7 @@ namespace Projeto_EDUX.Interfaces
 
         //Metodo que remove um curso do sistema
         void Remover(Guid id);
+
+        void Editar(Curso curso);
     }
 }
