@@ -1,4 +1,5 @@
-﻿using Projeto_EDUX.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_EDUX.Context;
 using Projeto_EDUX.Domains;
 using Projeto_EDUX.Interfaces;
 using System;
@@ -78,7 +79,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.ToList();
+                List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.Include("Objetivo").ToList();
 
                 return objetivo;
             }

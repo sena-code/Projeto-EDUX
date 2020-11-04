@@ -1,4 +1,5 @@
-﻿using Projeto_EDUX.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_EDUX.Context;
 using Projeto_EDUX.Domains;
 using Projeto_EDUX.Interfaces;
 using System;
@@ -79,7 +80,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<Turma> turma = _ctx.Turmas.ToList();
+                List<Turma> turma = _ctx.Turmas.Include("Curso").ToList();
 
                 return turma;
             }

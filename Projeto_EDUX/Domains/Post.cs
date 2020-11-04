@@ -16,11 +16,12 @@ namespace Projeto_EDUX.Domains
 
         public Usuario Usuario { get; set; }
 
+        public string UrlImagem { get; set; }
+
         [NotMapped] //Não mapeia a propiedade no banco de dados 
         [JsonIgnore] //Ignora propiedade no retorno no Json
 
-        public IFormFile Imagem { get; set; }
-        public string UrlImagem { get; set; }
-
+       
+  
     }
 }

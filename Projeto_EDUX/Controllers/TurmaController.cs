@@ -52,7 +52,20 @@ namespace Projeto_EDUX.Controllers
                     });
                 }
             }
-       
+        [HttpGet("curso")]
+        public IActionResult Buscarobjetivocomousuario()
+        {
+            try
+            {
+                var Cursos = _turmaRepository.Listar();
+
+                return Ok(new { data = Cursos });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         // GET api/<TurmaController>/5
 
         /// <summary>

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_EDUX.Context;
 
 namespace Projeto_EDUX.Migrations
 {
     [DbContext(typeof(EduxContext))]
-    partial class EduxContextModelSnapshot : ModelSnapshot
+    [Migration("20201103221318_addIncludes")]
+    partial class addIncludes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -214,6 +216,9 @@ namespace Projeto_EDUX.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Texto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UrlImagem")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

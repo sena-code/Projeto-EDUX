@@ -1,4 +1,5 @@
-﻿using Projeto_EDUX.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_EDUX.Context;
 using Projeto_EDUX.Domains;
 using Projeto_EDUX.Interfaces;
 using System;
@@ -62,7 +63,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<AlunoTurma> alunoTurmas = _ctx.AlunosTurmas.ToList();
+                List<AlunoTurma> alunoTurmas = _ctx.AlunosTurmas.Include("Usuario").ToList();
                 return alunoTurmas;
             }
             catch (Exception ex)

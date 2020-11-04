@@ -1,7 +1,9 @@
-﻿using Projeto_EDUX.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_EDUX.Context;
 using Projeto_EDUX.Domains;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,6 +21,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
+                
                 //Adicionar as informações do body no banco
                 _ctx.Posts.Add(post);
                 //Salvar as alterações
@@ -73,7 +76,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<Post> post = _ctx.Posts.ToList();
+                List<Post> post = _ctx.Posts.Include("Usuario").ToList();
 
                 return post;
             }

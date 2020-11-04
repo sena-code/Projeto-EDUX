@@ -86,6 +86,20 @@ namespace Projeto_EDUX.Controllers
 
         }
 
+        [HttpGet("categoria")]
+        public IActionResult BuscarEventosComEventos()
+        {
+            try
+            {
+                var Categorias = _objetivoRepository.Listar();
+
+                return Ok(new { data = Categorias });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         // POST api/<ObjetivoController>
         /// <summary>

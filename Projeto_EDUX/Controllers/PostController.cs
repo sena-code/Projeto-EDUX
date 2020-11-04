@@ -87,17 +87,15 @@ namespace Projeto_EDUX.Controllers
             try
             {
                 //Verifico se foi enviado um arquivo com a imagem
-                if (post.Imagem != null)
-                {
-                    var urlImagem = Upload.Local(post.Imagem);
-
-                    post.UrlImagem = urlImagem;
-
-                }
+                Post pst = new Post();
+                pst.UrlImagem = post.UrlImagem;
+                pst.IdUsuario = post.IdUsuario;
+                pst.Texto = post.Texto;
+               
                 //adicionar as alterações
-                _repo.Adicionar(post);
+                _repo.Adicionar(pst);
                 //se der certo, adiciona e retorna  
-                return Ok(post);
+                return Ok(new { data = pst});
             }
             catch (Exception ex)
             {
@@ -131,6 +129,20 @@ namespace Projeto_EDUX.Controllers
             {
 
                 return BadRequest(ex);
+            }
+        }
+        [HttpGet("usuario")]
+        public IActionResult Buscarobjetivocomousuario()
+        {
+            try
+            {
+                var Usuarios = _repo.Listar();
+
+                return Ok(new { data = Usuarios });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
