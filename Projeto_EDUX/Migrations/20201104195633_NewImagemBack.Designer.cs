@@ -10,8 +10,8 @@ using Projeto_EDUX.Context;
 namespace Projeto_EDUX.Migrations
 {
     [DbContext(typeof(EduxContext))]
-    [Migration("20201104025058_DropImagem")]
-    partial class DropImagem
+    [Migration("20201104195633_NewImagemBack")]
+    partial class NewImagemBack
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -216,6 +216,9 @@ namespace Projeto_EDUX.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Texto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UrlImagem")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

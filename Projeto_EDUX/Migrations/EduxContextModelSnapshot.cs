@@ -216,6 +216,9 @@ namespace Projeto_EDUX.Migrations
                     b.Property<string>("Texto")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UrlImagem")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("IdUsuario");

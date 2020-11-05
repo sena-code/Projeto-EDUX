@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using Projeto_EDUX.Utils;
 
-namespace Nyous.Api.Controllers
+namespace Projeto_EDUX.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

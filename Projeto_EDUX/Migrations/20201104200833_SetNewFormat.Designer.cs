@@ -10,8 +10,8 @@ using Projeto_EDUX.Context;
 namespace Projeto_EDUX.Migrations
 {
     [DbContext(typeof(EduxContext))]
-    [Migration("20201103221318_addIncludes")]
-    partial class addIncludes
+    [Migration("20201104200833_SetNewFormat")]
+    partial class SetNewFormat
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

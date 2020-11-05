@@ -51,8 +51,12 @@ namespace Projeto_EDUX.Controllers
         new Claim(JwtRegisteredClaimNames.NameId, userInfo.Nome),
         new Claim(JwtRegisteredClaimNames.Email, userInfo.Email),
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+
+       
+
                 new Claim(ClaimTypes.Role, userInfo.Perfil.Permicao),
-                new Claim("role", userInfo.Perfil.Permicao)
+                new Claim("role", userInfo.Perfil.Permicao),
+                new Claim("idUsuario", userInfo.Id.ToString())
     };
 
             // Configuramos nosso Token e seu tempo de vida

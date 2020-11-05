@@ -82,20 +82,23 @@ namespace Projeto_EDUX.Controllers
         /// <returns>adiciona a dica</returns>
 
         [HttpPost]
-        public IActionResult Post([FromForm] Post post)
+        public IActionResult Post([FromBody] Post post)
         {
             try
             {
                 //Verifico se foi enviado um arquivo com a imagem
-                Post pst = new Post();
-                pst.UrlImagem = post.UrlImagem;
-                pst.IdUsuario = post.IdUsuario;
-                pst.Texto = post.Texto;
-               
+                if (post.Imagem != null)
+                {
+                    var urlImagem = Upload.Local(post.Imagem);
+
+                    post.UrlImagem = urlImagem;
+
+                }
+
                 //adicionar as alterações
-                _repo.Adicionar(pst);
+                _repo.Adicionar(post);
                 //se der certo, adiciona e retorna  
-                return Ok(new { data = pst});
+                return Ok(new { data = post});
             }
             catch (Exception ex)
             {
@@ -151,7 +154,7 @@ namespace Projeto_EDUX.Controllers
         /// Excluir uma dica
         /// </summary>
         /// <param name="id">id da dica a ser excluida</param>
-        [Authorize(Roles =  "Comum")]
+        [Authorize(Roles =  "Comum, Administrador")]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {

@@ -21,7 +21,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                
+                post.IdUsuario = 
                 //Adicionar as informações do body no banco
                 _ctx.Posts.Add(post);
                 //Salvar as alterações

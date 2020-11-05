@@ -2,7 +2,7 @@
 
 namespace Projeto_EDUX.Migrations
 {
-    public partial class AddUploadTable : Migration
+    public partial class SetNewFormat : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

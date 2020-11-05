@@ -1,4 +1,5 @@
-﻿using Projeto_EDUX.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Projeto_EDUX.Context;
 using Projeto_EDUX.Domains;
 using Projeto_EDUX.Interfaces;
 using System;
@@ -74,7 +75,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<Dica> dica = _ctx.Dicas.ToList();
+                List<Dica> dica = _ctx.Dicas.Include("Usuario").ToList();
 
                 return dica;
             }

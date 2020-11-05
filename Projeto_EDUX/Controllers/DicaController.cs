@@ -75,6 +75,21 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
+        [HttpGet("usuario")]
+        public IActionResult BuscarUsuarios()
+        {
+            try
+            {
+                var Usuarios = _repo.Listar();
+
+                return Ok(new { data = Usuarios });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         // POST api/<DicaController>
         /// <summary>
         /// Adicionar Dica
@@ -84,7 +99,7 @@ namespace Projeto_EDUX.Controllers
         [Authorize(Roles = "Administrador")]
         [HttpPost]
 
-        public IActionResult Post([FromForm] Dica dica)
+        public IActionResult Post([FromBody] Dica dica)
         {
             try
             {
