@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_EDUX.Context;
 
 namespace Projeto_EDUX.Migrations
 {
     [DbContext(typeof(EduxContext))]
-    partial class EduxContextModelSnapshot : ModelSnapshot
+    [Migration("20201106040220_IdalunoTurma")]
+    partial class IdalunoTurma
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -172,10 +174,10 @@ namespace Projeto_EDUX.Migrations
                     b.Property<DateTime>("DataAlcancada")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("IdObjetivo")
+                    b.Property<Guid>("IdAlunoTurma")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("IdUsuario")
+                    b.Property<Guid>("IdObjetivo")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("Nota")
@@ -183,9 +185,9 @@ namespace Projeto_EDUX.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdObjetivo");
+                    b.HasIndex("IdAlunoTurma");
 
-                    b.HasIndex("IdUsuario");
+                    b.HasIndex("IdObjetivo");
 
                     b.ToTable("ObjetivosAlunos");
                 });
@@ -344,15 +346,15 @@ namespace Projeto_EDUX.Migrations
 
             modelBuilder.Entity("Projeto_EDUX.Domains.ObjetivoAluno", b =>
                 {
-                    b.HasOne("Projeto_EDUX.Domains.Objetivo", "Objetivo")
+                    b.HasOne("Projeto_EDUX.Domains.AlunoTurma", "AlunoTurma")
                         .WithMany()
-                        .HasForeignKey("IdObjetivo")
+                        .HasForeignKey("IdAlunoTurma")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Projeto_EDUX.Domains.Usuario", "Usuario")
+                    b.HasOne("Projeto_EDUX.Domains.Objetivo", "Objetivo")
                         .WithMany()
-                        .HasForeignKey("IdUsuario")
+                        .HasForeignKey("IdObjetivo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

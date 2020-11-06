@@ -11,7 +11,7 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador")]
+    [Authorize(Roles = "Administrador, Comum")]
     [Route("api/[controller]")]
     [ApiController]
     public class ObjetivoAlunoController : ControllerBase
@@ -97,20 +97,6 @@ namespace Projeto_EDUX.Controllers
             }
         }
 
-        [HttpGet("usuario")]
-        public IActionResult Buscarobjetivocomousuario()
-        {
-            try
-            {
-                var Usuarios = _objetivoAlunoRepository.Listar();
-
-                return Ok(new { data = Usuarios });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
 
 
         // POST api/<ObjetivoAlunoController>

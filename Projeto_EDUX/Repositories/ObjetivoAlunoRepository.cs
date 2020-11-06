@@ -49,7 +49,7 @@ namespace Projeto_EDUX.Repositories
            
             ObjetivoAluno objetivonew = BuscarPorId(objetivo.Id);
             objetivonew.DataAlcancada = objetivo.DataAlcancada;
-            objetivonew.IdAlunoTurma = objetivo.IdAlunoTurma;
+            objetivonew.IdUsuario = objetivo.IdUsuario;
             objetivonew.Nota = objetivo.Nota;
             objetivonew.IdObjetivo = objetivo.IdObjetivo;
             
@@ -80,6 +80,9 @@ namespace Projeto_EDUX.Repositories
             try
             {
                 List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.Include("Objetivo").ToList();
+              
+
+
 
                 return objetivo;
             }

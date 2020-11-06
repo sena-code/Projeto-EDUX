@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201106035734_DropIdalunoTurma.cs" />
+    <Compile Remove="Migrations\20201106035734_DropIdalunoTurma.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwRoot\upload\imagem\" />
   </ItemGroup>
 

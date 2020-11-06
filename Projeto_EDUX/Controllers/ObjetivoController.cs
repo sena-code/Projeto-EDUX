@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador")]
+    [Authorize(Roles = "Administrador, Comum")]
     [Route("api/[controller]")]
     [ApiController]
     public class ObjetivoController : ControllerBase
@@ -27,6 +27,7 @@ namespace Projeto_EDUX.Controllers
         /// Ler todos os Objetivos cadastrados
         /// </summary>
         /// <returns>Lista de objetivos</returns>
+        [Authorize(Roles = "Administrador, Comum")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -62,6 +63,7 @@ namespace Projeto_EDUX.Controllers
         /// </summary>
         /// <param name="id">ID do objetivo</param>
         /// <returns>Categoria procurado</returns>
+        [Authorize(Roles = "Administrador, Comum")]
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
@@ -107,6 +109,7 @@ namespace Projeto_EDUX.Controllers
         /// </summary>
         /// <param name="objetivo">objetivo</param>
         /// <returns>objetivo cadastrado</returns>
+        [Authorize(Roles = "Administrador")]
         [HttpPost]
         public IActionResult Post([FromBody] Objetivo objetivo)
         {
@@ -123,7 +126,7 @@ namespace Projeto_EDUX.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        [Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Objetivo objetivo)
         {

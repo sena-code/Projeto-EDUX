@@ -12,7 +12,7 @@ using Projeto_EDUX.Utils;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Comum, Administrador")]
+    [Authorize(Roles = "Administrador, Comum")]
     [Route("api/[controller]")]
     [ApiController]
     public class DicaController : ControllerBase
@@ -27,6 +27,7 @@ namespace Projeto_EDUX.Controllers
         /// Listar as Dicas
         /// </summary>
         /// <returns></returns>
+        [Authorize(Roles = "Administrador, Comum")]
         [HttpGet]
         public IActionResult Get()
         {
