@@ -77,8 +77,7 @@ namespace Projeto_EDUX.Controllers
         /// <summary>
         /// Adicionar Dica
         /// </summary>
-        /// <param name="post"></param>
-        /// <param name="dica">as informações da dica</param>
+        /// <param name="post">as informações do post</param>
         /// <returns>adiciona a dica</returns>
 
         [HttpPost]
@@ -112,7 +111,7 @@ namespace Projeto_EDUX.Controllers
         /// Editar uma dica 
         /// </summary>
         /// <param name="id">id da dica</param>
-        /// <param name="dica">informações da dica</param>
+        /// <param name="post">informações do post</param>
         /// <returns>a dica alterada</returns>
         /// 
         [Authorize(Roles = "Comum")]

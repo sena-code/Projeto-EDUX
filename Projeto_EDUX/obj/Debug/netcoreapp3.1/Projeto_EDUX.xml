@@ -306,8 +306,7 @@
             <summary>
             Adicionar Dica
             </summary>
-            <param name="post"></param>
-            <param name="dica">as informações da dica</param>
+            <param name="post">as informações do post</param>
             <returns>adiciona a dica</returns>
         </member>
         <member name="M:Projeto_EDUX.Controllers.PostController.Put(System.Guid,Projeto_EDUX.Domains.Post)">
@@ -315,7 +314,7 @@
             Editar uma dica 
             </summary>
             <param name="id">id da dica</param>
-            <param name="dica">informações da dica</param>
+            <param name="post">informações do post</param>
             <returns>a dica alterada</returns>
             
         </member>

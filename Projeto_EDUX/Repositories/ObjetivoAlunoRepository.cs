@@ -79,7 +79,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.Include("Objetivo").ToList();
+                List<ObjetivoAluno> objetivo = _ctx.ObjetivosAlunos.Include("Objetivo").Include("Usuario").ToList();
               
 
 

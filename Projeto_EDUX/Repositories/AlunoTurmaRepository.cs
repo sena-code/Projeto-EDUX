@@ -63,7 +63,7 @@ namespace Projeto_EDUX.Repositories
         {
             try
             {
-                List<AlunoTurma> alunoTurmas = _ctx.AlunosTurmas.Include("Usuario").ToList();
+                List<AlunoTurma> alunoTurmas = _ctx.AlunosTurmas.Include("Usuario").Include("Turma").ToList();
                 return alunoTurmas;
             }
             catch (Exception ex)

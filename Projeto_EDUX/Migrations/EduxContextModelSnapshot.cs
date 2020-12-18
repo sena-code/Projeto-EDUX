@@ -82,7 +82,15 @@ namespace Projeto_EDUX.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("IdUsuario")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Like")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("IdUsuario");
 
                     b.ToTable("Curtidas");
                 });
@@ -320,6 +328,15 @@ namespace Projeto_EDUX.Migrations
                     b.HasOne("Projeto_EDUX.Domains.Instituicao", "Instituicao")
                         .WithMany()
                         .HasForeignKey("IdInstituicao")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Projeto_EDUX.Domains.Curtida", b =>
+                {
+                    b.HasOne("Projeto_EDUX.Domains.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("IdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

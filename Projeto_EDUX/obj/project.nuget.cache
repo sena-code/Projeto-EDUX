@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F/EHq2NlENO34F4GQNP7OUWVCA+1Bxf0PtZpZQOVCd0Xtlvz5rTl9qzutx7uhuwav+BfotRhMN+ESKwijzMy1A==",
+  "dgSpecHash": "6bPCBEpIjtd+l3q0H2V7cXAdXFGFZjHHQNwlojgMVIp4Q/qgafr5qWNv1wp3JCCLba4+AaxmAxUIxvsn6c1naQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vinicius\\Desktop\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
+  "projectFilePath": "C:\\Users\\Vinicius\\Desktop\\Folders\\APIs\\Projeto_EDUX\\Projeto_EDUX\\Projeto_EDUX.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.8\\microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",

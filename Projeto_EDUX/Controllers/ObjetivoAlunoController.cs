@@ -11,7 +11,7 @@ using Projeto_EDUX.Repositories;
 
 namespace Projeto_EDUX.Controllers
 {
-    [Authorize(Roles = "Administrador, Comum")]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class ObjetivoAlunoController : ControllerBase
